@@ -24,9 +24,9 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: 889b225f9f81d624382b21dbb2889212, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _DISABLE_SSR_TRANSPARENT
-  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -206,9 +206,9 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _NewColor1: {r: 0.78431374, g: 0, b: 0, a: 0}
-    - _NewColor2: {r: 0.74509805, g: 0.43137255, b: 0, a: 0}
-    - _NewColor3: {r: 0.54901963, g: 0.3137255, b: 0, a: 0}
+    - _NewColor1: {r: 0.75214523, g: 0.74311143, b: 0.7924528, a: 0}
+    - _NewColor2: {r: 0.6886792, g: 0.58582187, b: 0.444393, a: 0}
+    - _NewColor3: {r: 0.5566038, g: 0.47873926, b: 0.37491992, a: 0}
     - _NewColor4: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
     - _NewColor5: {r: 0, g: 1, b: 1, a: 0}
     - _NewColor6: {r: 1, g: 0, b: 1, a: 0}

@@ -53,9 +53,9 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: a4093026609f0d0469988ad15d1e1162, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _DISABLE_SSR_TRANSPARENT
-  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -250,14 +250,14 @@ Material:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Layer1NewColor1: {r: 1, g: 1, b: 1, a: 0}
-    - _Layer1NewColor2: {r: 0.74509805, g: 0.43137255, b: 0, a: 0}
-    - _Layer1NewColor3: {r: 0.54901963, g: 0.3137255, b: 0, a: 0}
+    - _Layer1NewColor2: {r: 0.7830189, g: 0.538549, b: 0.20240295, a: 0}
+    - _Layer1NewColor3: {r: 0.6132076, g: 0.3935437, b: 0.10065857, a: 0}
     - _Layer1NewColor4: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
     - _Layer1NewColor5: {r: 0, g: 1, b: 1, a: 0}
     - _Layer1NewColor6: {r: 1, g: 0, b: 1, a: 0}
     - _Layer1NewColor7: {r: 1, g: 1, b: 0, a: 0}
-    - _Layer2NewColor1: {r: 0.88235295, g: 0, b: 0, a: 0}
-    - _Layer2NewColor2: {r: 1, g: 1, b: 1, a: 0}
+    - _Layer2NewColor1: {r: 1, g: 0.9118312, b: 0.5886792, a: 0}
+    - _Layer2NewColor2: {r: 0.82073045, g: 0.7396226, b: 1, a: 0}
     - _Layer2NewColor3: {r: 0, g: 0, b: 0, a: 0}
     - _Layer2NewColor4: {r: 0, g: 0, b: 0, a: 0}
     - _Layer3NewColor1: {r: 0, g: 0, b: 0, a: 0}
