@@ -12,7 +12,8 @@ public class AirBalloon : MonoBehaviour
         if (collision.gameObject == player)
         {
             player.transform.parent = this.transform;
-            GetComponent<Animator>().Play("balloonUp"); 
+            GetComponent<Animator>().Play("balloonUp");
+          //  player.GetComponent<FirstPersonController>().isGrounded = true;
         }
     }
 
