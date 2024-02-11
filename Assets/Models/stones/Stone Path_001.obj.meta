@@ -3,7 +3,12 @@ guid: 5d8e52d4c0940aa4fa21df11bc506e16
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone_Path.001_ambientCG_Rock013_1K-PNGMat
+    second: {fileID: 2100000, guid: 0f3bda39d57c9eb43897c9fa54aedd15, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
