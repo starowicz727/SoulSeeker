@@ -47,7 +47,6 @@ public class StreetLamp : MonoBehaviour
         if (lampLight.intensity > 0)
         {
             lampLight.intensity -= speed * Time.deltaTime;
-            Debug.Log(lampLight.intensity);
         }
     }
 }
