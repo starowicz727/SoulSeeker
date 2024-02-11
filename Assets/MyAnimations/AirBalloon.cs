@@ -13,7 +13,23 @@ public class AirBalloon : MonoBehaviour
         {
             player.transform.parent = this.transform;
             GetComponent<Animator>().Play("balloonUp");
-          //  player.GetComponent<FirstPersonController>().isGrounded = true;
+        }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject == player)
+        {
+            if (this.transform.position.y == 1.7 || this.transform.position.y == 50)
+            {
+                //player.GetComponent<FirstPersonController>().playerCanMove = true;
+                player.GetComponent<FirstPersonController>().isGrounded = true;
+            }
+            else
+            {
+                player.GetComponent<FirstPersonController>().isGrounded = false;
+                //player.GetComponent<FirstPersonController>().playerCanMove = false;
+            }
         }
     }
 
