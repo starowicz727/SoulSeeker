@@ -20,15 +20,16 @@ public class AirBalloon : MonoBehaviour
     {
         if (collision.gameObject == player)
         {
-            if (this.transform.position.y == 1.7 || this.transform.position.y == 50)
+            if (this.transform.position.y <= 1.8 || this.transform.position.y >= 49)
             {
-                //player.GetComponent<FirstPersonController>().playerCanMove = true;
+                Debug.Log("true ");
+                player.GetComponent<FirstPersonController>().enableJump = true;
                 player.GetComponent<FirstPersonController>().isGrounded = true;
             }
             else
             {
-                player.GetComponent<FirstPersonController>().isGrounded = false;
-                //player.GetComponent<FirstPersonController>().playerCanMove = false;
+                Debug.Log("false ");
+                player.GetComponent<FirstPersonController>().enableJump = false;
             }
         }
     }

@@ -10,14 +10,17 @@ public class Tram : MonoBehaviour
         if (collision.gameObject == player)
         {
             player.transform.parent = this.transform;
+            player.GetComponent<FirstPersonController>().enableJump = false;
         }
     }
+
 
     private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject == player)
         {
             player.transform.parent = null;
+            player.GetComponent<FirstPersonController>().enableJump = true;
         }
     }
 }
