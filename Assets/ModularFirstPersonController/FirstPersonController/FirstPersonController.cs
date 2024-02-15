@@ -8,9 +8,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Threading;
 
 #if UNITY_EDITOR
-    using UnityEditor;
+using UnityEditor;
     using System.Net;
 #endif
 
@@ -96,10 +97,11 @@ public class FirstPersonController : MonoBehaviour
 
     public bool enableJump = true;
     public KeyCode jumpKey = KeyCode.Space;
-    public float jumpPower = 5f;
+    public float jumpPower = 6f;
 
     // Internal Variables
     public bool isGrounded = false;
+
 
     #endregion
 
@@ -370,6 +372,7 @@ public class FirstPersonController : MonoBehaviour
 
         if (playerCanMove)
         {
+            
             // Calculate how fast we should be moving
             Vector3 targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
@@ -462,6 +465,18 @@ public class FirstPersonController : MonoBehaviour
 
     private void Jump()
     {
+        if (this.transform.position.y >= 10) // FLYING 
+        {
+            Physics.gravity = new Vector3(0, -1f, 0);
+            jumpPower = 4;
+            isGrounded = true;
+        }
+        else
+        {
+            jumpPower = 6;
+            Physics.gravity = new Vector3(0, -9.81f, 0);
+        }
+
         // Adds force to the player rigidbody to jump
         if (isGrounded)
         {
