@@ -23,4 +23,19 @@ public class Tram : MonoBehaviour
             player.GetComponent<FirstPersonController>().enableJump = true;
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Ghost")
+        {
+            other.transform.parent = this.transform;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Ghost")
+        {
+            other.transform.parent = null; 
+        }
+    }
 }
