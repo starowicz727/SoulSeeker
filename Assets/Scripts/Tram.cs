@@ -62,10 +62,5 @@ public class Tram : MonoBehaviour
             player.GetComponent<FirstPersonController>().enableJump = true;
             GhostAI.distanceFromPlayer = standardDistanceToPlayer; Debug.Log(GhostAI.distanceFromPlayer);
         }
-
-        if (other.gameObject.tag == "Ghost")
-        {
-            other.transform.parent = null;
-        }
     }
 }
