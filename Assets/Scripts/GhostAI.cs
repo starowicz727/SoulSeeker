@@ -8,6 +8,7 @@ public class GhostAI : MonoBehaviour
     private Vector3 startingPosition;
 
     private float maxSpeed;
+    public static float distanceFromPlayer;
 
     public GameObject player;
     public bool walk = false;
@@ -20,7 +21,8 @@ public class GhostAI : MonoBehaviour
     void Start()
     {
         startingPosition = this.transform.position;
-        maxSpeed = 2f;
+        maxSpeed = 3f;
+        distanceFromPlayer = 3f;
     }
 
     // Update is called once per frame
@@ -28,7 +30,7 @@ public class GhostAI : MonoBehaviour
     {
         if (readyToGo && followingPlayer)
         {
-           FollowTargetWithRotation(player.transform, 3f, 1f);
+           FollowTargetWithRotation(player.transform, distanceFromPlayer, maxSpeed);
         }
         else
         {
@@ -67,8 +69,7 @@ public class GhostAI : MonoBehaviour
         {
             Vector3 directionOfTravel = target.position - transform.position;
             directionOfTravel.Normalize();
-            this.GetComponent<Rigidbody>().MovePosition(transform.position + (directionOfTravel * maxSpeed * Time.deltaTime));
-
+            this.GetComponent<Rigidbody>().MovePosition(transform.position + (directionOfTravel * speed * Time.deltaTime));
         }
     }
 

@@ -29,7 +29,7 @@ public class Ghost : MonoBehaviour
 
     private void Start()
     {
-        maxSpeed = 0.005f;
+        maxSpeed = 0.01f;
         maxForce = 1;
         mass = 0.2f;
         idle = true; walk = false; attack = false;
@@ -85,12 +85,9 @@ public class Ghost : MonoBehaviour
             velocity -= velocity.normalized * velocity.magnitude / 2f * Time.deltaTime;
 
         move = Vector3.ClampMagnitude(velocity, maxSpeed);
-        if (velocity != Vector3.zero)
-        {
-           // transform.up = velocity.normalized;
-        }
         
-        transform.Translate(-move, Space.World);
+        transform.Translate(move, Space.World);
+        transform.up = velocity.normalized;
     }
 
     public Vector3 Seek(Vector3 TargetPos) 
