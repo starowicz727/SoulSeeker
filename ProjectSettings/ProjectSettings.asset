@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: SoulSeeker
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: f8693a6b051e2354d8a83b34c20de71e, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -281,7 +281,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: b83d1ffbcb74f054ba72aca2095e0dbd, type: 3}
+      m_Icon: {fileID: 2800000, guid: aec58071c44e8c24d995e6472ff69a7b, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
