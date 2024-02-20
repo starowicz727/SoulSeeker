@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2188528764049621673}
   - component: {fileID: 6937404485478233800}
   - component: {fileID: 4837975044944576556}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7454472306981527729}
   - component: {fileID: 6038313208704663915}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
