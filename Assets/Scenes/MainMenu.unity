@@ -555,7 +555,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: jump from a great hight
+  m_Text: jump from a great height
 --- !u!222 &235130208
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -938,8 +938,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.064087, y: 232}
-  m_SizeDelta: {x: 1612.9739, y: 182.9405}
+  m_AnchoredPosition: {x: 42, y: 254}
+  m_SizeDelta: {x: 1085.19, y: 207.1137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &519524300
 MonoBehaviour:
@@ -990,9 +990,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'collect lonely souls on the haunted island and get them through the torii
-    gate
-
-    watch out for the souls that are not ready yet to come with you '
+    gate. watch out for the souls that are not ready to come with you yet. '
 --- !u!222 &519524302
 CanvasRenderer:
   m_ObjectHideFlags: 0
