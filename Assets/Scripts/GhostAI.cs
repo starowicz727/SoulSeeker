@@ -66,6 +66,7 @@ public class GhostAI : MonoBehaviour
             followingPlayer = true;
 
         }
+
         //if (other.gameObject.tag == "Ghost" && followingPlayer && other.gameObject.GetComponent<GhostAI>().angerIssues)
         //{
         //    Debug.Log("found ghost");
@@ -81,6 +82,14 @@ public class GhostAI : MonoBehaviour
         //    followingGhost = true;
         //}
         
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject == player && !readyToGo)
+        {
+            Look(other.transform);
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -103,6 +112,11 @@ public class GhostAI : MonoBehaviour
         //}
     }
 
+    void Look(Transform target)
+    {
+        Vector3 directionToTarget = target.position - transform.position;
+        transform.rotation = Quaternion.LookRotation(new Vector3(directionToTarget.x, 0, directionToTarget.z));
+    }
     void FollowTargetWithRotation(Transform target, float distanceToStop, float speed, float heighDifference) // difference -0.4 when its player and 0 when its ghost
     {
         //transform.LookAt(target);
